@@ -13,11 +13,7 @@
 
 ActiveRecord::Schema.define(version: 20131111140432) do
 
-  create_table "items", force: true do |t|
-    t.string   "name"
-    t.integer  "price",      precision: 38, scale: 0
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
+# Could not dump table "items" because of following NoMethodError
+#   undefined method `column_spec_with_oracle_enhanced' for #<ActiveRecord::ConnectionAdapters::SQLite3Adapter:0x00000004ebcbf8>
 
 end
